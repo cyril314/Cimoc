@@ -34,12 +34,12 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: android-apk
-        path: app/release/*.apk
+        path: app/build/outputs/apk/release/*.apk
         
     - name: Upload APK to GitHub Releases
       uses: ncipollo/release-action@v1
       with:
-        artifacts: app/release/*.apk
+        artifacts: app/build/outputs/apk/release/*.apk
         token: ${{ secrets.GITHUB_TOKEN }}
         tag: ${{ github.event.inputs.tag_name }}
         name: "Android APK Release"
