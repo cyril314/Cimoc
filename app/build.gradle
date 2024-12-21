@@ -6,7 +6,7 @@ apply plugin: 'com.google.firebase.crashlytics'
 apply plugin: 'com.huawei.agconnect'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     buildToolsVersion '30.0.3'
 
     compileOptions {
@@ -17,7 +17,7 @@ android {
     defaultConfig {
         applicationId "com.haleydu.cimoc"
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionName "1.9.9"
         resConfigs "en", "zh"
         multiDexEnabled true

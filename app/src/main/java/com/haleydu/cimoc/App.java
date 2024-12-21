@@ -6,7 +6,6 @@ import android.content.res.Resources;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 import androidx.multidex.MultiDex;

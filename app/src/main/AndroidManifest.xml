@@ -7,81 +7,63 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 
-    <application
-            android:name=".App"
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:supportsRtl="true"
-            android:usesCleartextTraffic="true"
-            android:requestLegacyExternalStorage="true"
-            android:preserveLegacyExternalStorage="true"
-            android:largeHeap="true"
-            android:theme="@style/AppTheme"
-            tools:ignore="UnusedAttribute">
+    <application android:name="com.haleydu.cimoc.App"
+                 android:allowBackup="true"
+                 android:icon="@mipmap/ic_launcher"
+                 android:label="@string/app_name"
+                 android:supportsRtl="true"
+                 android:usesCleartextTraffic="true"
+                 android:requestLegacyExternalStorage="true"
+                 android:preserveLegacyExternalStorage="true"
+                 android:largeHeap="true"
+                 android:theme="@style/AppTheme"
+                 tools:ignore="UnusedAttribute">
         <meta-data android:name="EasyGoClient" android:value="true"/>
 
-        <activity
-                android:name=".ui.activity.MainActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"
-                android:windowSoftInputMode="adjustPan">
+        <activity android:name=".ui.activity.MainActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-                android:name=".ui.activity.ResultActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.DetailActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.ChapterActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.TagEditorActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.TaskActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.SettingsActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.settings.ReaderConfigActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.BackupActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.CategoryActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.SearchActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.SourceDetailActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.PartFavoriteActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.DirPickerActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.settings.EventSettingsActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.PageReaderActivity"
-                android:forceDarkAllowed="false"
-                android:theme="@style/AppThemeNoDark"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity
-                android:name=".ui.activity.StreamReaderActivity"
-                android:forceDarkAllowed="false"
-                android:theme="@style/AppThemeNoDark"
-                android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.ResultActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.DetailActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.ChapterActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.TagEditorActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.TaskActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.SettingsActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.settings.ReaderConfigActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.BackupActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.CategoryActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.SearchActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.SourceDetailActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.PartFavoriteActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.DirPickerActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.settings.EventSettingsActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.PageReaderActivity"
+                  android:forceDarkAllowed="false"
+                  android:theme="@style/AppThemeNoDark"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ui.activity.StreamReaderActivity"
+                  android:forceDarkAllowed="false"
+                  android:theme="@style/AppThemeNoDark"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
         <activity android:name=".ui.activity.BrowserFilter" android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.SEND"/>
